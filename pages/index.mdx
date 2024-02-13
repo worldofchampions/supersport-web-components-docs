@@ -1,11 +1,93 @@
-# Introduction
- 
-Welcome to Nextra! This is a basic docs template. You can use it as a starting point for your own project :)
+---
+title: SuperSport Web Components
+---
+
+import { Cards } from "nextra/components";
+import { Features } from "@/components/sections/features";
+
+# SuperSport Web Components
+
+SuperSport Web Components is a library of UI components that are the building blocks to help create an intuitive
+and uniform user interface for all your apps. Crayons helps developers build apps that adhere to the UX standards
+set by the Freshworks Design System.
+
+# Features
+
+<Features />
+
+Tiny, highly optimized 40+ web components built with Stencil(opens new window)
+
+- No build or compiling required
+- Simply add the static files to any project
+- Tree shakable bundle for components
+- Lazy-loaded components without configuration
+- Style customisation through CSS Variables
+- Framework Wrappers for React(opens new window)
+- Set of CSS utilities (opens new window)to speed up development
+- i18n (opens new window)support
+- icon library (opens new window)with support for using external icons
+
+# Why Web Components?
+
+Web components provides a way to create our own HTML elements and use them in any framework.
+
+With every growing popularity of frameworks such as React, Vue, Angular component driven development has become a need. Components
+help us encapsulate styles and behaviors into reusable blocks.
+
+Drawbacks with Framework specific components:
+
+- The components can only be used in their specific framework.
+- Any new framework or version changes can lead to breaking changes and require substantial effort to update the components.
+- Web components solve these problems.
+- They're supported by all modern browsers.
+- They're framework agnostic.
+- They're a part of the web standard.
 
 ## What is Nextra?
 
 A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
 
-## Documentation
+## Quick Start
 
-The documentation is available at [https://nextra.site](https://nextra.site).
+<Cards num={2}>
+	<Cards.Card image arrow title="Promo Banner" href="/components/promo_banner">
+		<>![Promo Banner](/promo.png)</>
+	</Cards.Card>
+	<Cards.Card image arrow title="Blog theme" href="/docs/blog-theme/start">
+		<>![Blog theme](/assets/blog-theme.png)</>
+	</Cards.Card>
+</Cards>
+
+If you want to use Nextra without using these built-in themes, you can follow
+the [Custom Theme](/docs/custom-theme) docs.
+
+## Frequently Asked Questions
+
+The Nextra FAQ is a collection of useful questions and answers about the
+project. If you have a question that isn't answered here, please
+[open a discussion](https://github.com/shuding/nextra/discussions).
+
+import { FAQ } from "@/components/faq";
+
+<FAQ title="Can I use Nextra with Next.js app router?">
+	No, Nextra only works with the `/pages` directory at the moment. Support for
+	the app router has not been implemented yet. But you can use `/app` and
+	`/pages` at the same time - just put your docs inside `/pages` and your other
+	routes in `/app`
+</FAQ>
+
+<FAQ title="Can I use X with Nextra?">
+  The answer is “yes” for most things. Since Nextra is just a Next.js plugin, almost all the things
+  that can be done with React can be done with Nextra. Here are some examples and guides:
+
+- [Use Tailwind CSS](/docs/guide/tailwind-css)
+- [Use custom CSS and Sass](/docs/guide/custom-css)
+- [Use custom fonts](https://nextjs.org/docs/basic-features/font-optimization)
+
+</FAQ>
+
+<FAQ title="How can I add a live coding component in Nextra?">
+	There are libraries like [Sandpack](https://sandpack.codesandbox.io) and
+	[react-live](https://github.com/FormidableLabs/react-live) that can help you
+	add live coding components to your MDX.
+</FAQ>

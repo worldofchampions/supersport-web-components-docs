@@ -1,15 +1,20 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
+  "*": {
+    "lastUpdated": "Last Updated"
   },
+  "index": "Introduction",
+  "overview": "Overview",
+  "another": "Another Page",
+  "-- Components": {
+    "type": "separator",
+    "title": "Components"
+  },
+  "components": "Components",
+  "changelog": "Changelog",
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://supersport.com/contact",
     "newWindow": true
   }
 }
