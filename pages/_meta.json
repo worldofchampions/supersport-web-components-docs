@@ -1,20 +1,45 @@
 {
-  "*": {
-    "lastUpdated": "Last Updated"
+  "-- Get Started": {
+    "type": "separator",
+    "title": "Getting Started"
   },
   "index": "Introduction",
-  "overview": "Overview",
-  "another": "Another Page",
+  "installation": "Installation",
+  "browser_support": "Browser Support",
+  "theming": "Theming",
+  "changelog": "Changelog",
+  "-- Guidelines": {
+    "type": "separator",
+    "title": "Guidelines"
+  },
   "-- Components": {
     "type": "separator",
     "title": "Components"
   },
-  "components": "Components",
-  "changelog": "Changelog",
-  "contact": {
-    "title": "Contact ↗",
-    "type": "page",
-    "href": "https://supersport.com/contact",
+  "components": {
+    "title": "Components",
+    "hidden": true
+  },
+  "article_card": {
+    "title": "Article Card",
+    "href": "/components/article_card"
+  },
+  "promo_banner": {
+    "title": "Promo Banner",
+    "href": "/components/promo_banner"
+  },
+  "-- More": {
+    "type": "separator",
+    "title": "More"
+  },
+  "supersport-link": {
+    "title": "supersport.com ↗",
+    "href": "https://supersport.com",
+    "newWindow": true
+  },
+  "submit-a-ticket-link": {
+    "title": "Support ↗",
+    "href": "https://worldofchampions.freshdesk.com/support/tickets/new",
     "newWindow": true
   }
 }

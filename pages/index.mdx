@@ -2,74 +2,51 @@
 title: SuperSport Web Components
 ---
 
-import { Cards } from "nextra/components";
 import { Features } from "@/components/sections/features";
+import { ExternalLink } from "@/components/external-link";
 
 # SuperSport Web Components
 
-SuperSport Web Components is a library of UI components that are the building blocks to help create an intuitive
-and uniform user interface for all your apps. Crayons helps developers build apps that adhere to the UX standards
-set by the Freshworks Design System.
+SuperSport Web Components comprises a collection of UI elements designed to facilitate the
+seamless integration of SuperSport's uniform interface and functionality across various platforms.
 
-# Features
+Our components are <ExternalLink href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components">Web Components</ExternalLink>
+built using <ExternalLink href="https://stenciljs.com/">Stencil</ExternalLink>. Simply put, Web Components allow us
+to create our own HTML tags using existing web standards, Stencil being a simple library helping us with the boilerplate.
+
+These web components are then very easily integrated into any website to bring SuperSport content into your project.
+
+## Features
 
 <Features />
 
-Tiny, highly optimized 40+ web components built with Stencil(opens new window)
+## Why Web Components?
 
-- No build or compiling required
-- Simply add the static files to any project
-- Tree shakable bundle for components
-- Lazy-loaded components without configuration
-- Style customisation through CSS Variables
-- Framework Wrappers for React(opens new window)
-- Set of CSS utilities (opens new window)to speed up development
-- i18n (opens new window)support
-- icon library (opens new window)with support for using external icons
+Web components offer a method for crafting custom HTML elements that can be utilised across multiple frameworks.
 
-# Why Web Components?
+As the adoption of frameworks like React, Vue, and Angular continues to surge, component-driven development has
+become essential. Components allow us to encapsulate styles and functionality into reusable units.
 
-Web components provides a way to create our own HTML elements and use them in any framework.
+However, framework-specific components present certain limitations:
 
-With every growing popularity of frameworks such as React, Vue, Angular component driven development has become a need. Components
-help us encapsulate styles and behaviors into reusable blocks.
+- They are bound to their respective frameworks.
+- Updates or shifts to new frameworks may necessitate extensive modifications and effort to update the components.
 
-Drawbacks with Framework specific components:
+Web components address these challenges effectively:
 
-- The components can only be used in their specific framework.
-- Any new framework or version changes can lead to breaking changes and require substantial effort to update the components.
-- Web components solve these problems.
-- They're supported by all modern browsers.
-- They're framework agnostic.
-- They're a part of the web standard.
-
-## What is Nextra?
-
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
-
-## Quick Start
-
-<Cards num={2}>
-	<Cards.Card image arrow title="Promo Banner" href="/components/promo_banner">
-		<>![Promo Banner](/promo.png)</>
-	</Cards.Card>
-	<Cards.Card image arrow title="Blog theme" href="/docs/blog-theme/start">
-		<>![Blog theme](/assets/blog-theme.png)</>
-	</Cards.Card>
-</Cards>
-
-If you want to use Nextra without using these built-in themes, you can follow
-the [Custom Theme](/docs/custom-theme) docs.
+- They enjoy support across all modern browsers.
+- They are independent of any particular framework.
+- They are an integral part of the web standard.
 
 ## Frequently Asked Questions
 
 The Nextra FAQ is a collection of useful questions and answers about the
-project. If you have a question that isn't answered here, please
-[open a discussion](https://github.com/shuding/nextra/discussions).
+project. If you have a question that are'nt answered here, please
+[open a discussion](https://github.com/worldofchampions/supersport-web-components-docs/discussions).
 
 import { FAQ } from "@/components/faq";
 
-<FAQ title="Can I use Nextra with Next.js app router?">
+<FAQ title="Can I use SuperSport Wen Components with Next.js app router?">
 	No, Nextra only works with the `/pages` directory at the moment. Support for
 	the app router has not been implemented yet. But you can use `/app` and
 	`/pages` at the same time - just put your docs inside `/pages` and your other

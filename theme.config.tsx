@@ -99,10 +99,6 @@ const config: DocsThemeConfig = {
 	toc: {
 		backToTop: true,
 	},
-	darkMode: false,
-	nextThemes: {
-		defaultTheme: "dark",
-	},
 	gitTimestamp: function GitTimestamp({ timestamp }) {
 		const { locale } = useRouter();
 		return (
