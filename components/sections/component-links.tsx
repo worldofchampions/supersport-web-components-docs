@@ -1,32 +1,39 @@
 import { Icons } from "@/components/icons";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Code2, Feather, Glasses, PaintRoller } from "lucide-react";
+import {
+	Code2,
+	Feather,
+	Glasses,
+	ListVideo,
+	Newspaper,
+	PaintRoller,
+} from "lucide-react";
 import Link from "next/link";
 
 const componentLinks = [
+	{
+		title: "Article Card",
+		icon: Newspaper,
+		href: "/components/article_card",
+	},
+	{
+		title: "Article List",
+		icon: Icons.web_components,
+		href: "/components/article_card",
+	},
 	{
 		title: "Promo Banner",
 		icon: Icons.web_components,
 		href: "/components/promo_banner",
 	},
-  {
-		title: "Article Card",
-		icon: Icons.web_components,
-		href: "/components/article_card",
-	},
-  {
-		title: "Article List",
-		icon: Icons.web_components,
-		href: "/components/article_card",
-	},
-  {
+	{
 		title: "Video Card",
 		icon: Icons.web_components,
 		href: "/components/video_card",
 	},
-  {
+	{
 		title: "Video List",
-		icon: Icons.web_components,
+		icon: ListVideo,
 		href: "/components/video_list",
 	},
 ];
