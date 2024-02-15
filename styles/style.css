@@ -112,3 +112,6 @@ h2 {
 .nextra-code-block pre {
 	@apply !bg-card;
 }
+details {
+	@apply !bg-card;
+}

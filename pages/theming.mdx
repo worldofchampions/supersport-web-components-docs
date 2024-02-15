@@ -1,6 +1,6 @@
 # Theming
 
-SuperSport web components can be customized at a high level through design tokens. This gives you control over theme
+SuperSport Web Components can be customized at a high level through design tokens. This gives you control over theme
 colors and general styling. For more advanced customizations, you can make use of component variables
 to target individual components.
 
@@ -8,11 +8,11 @@ These are built with CSS custom properties (sometimes referred to as CSS variabl
 customization of an application. CSS custom properties allow a value to be stored in one place, then
 referenced in multiple other places. They also make it possible to change CSS dynamically at
 runtime (which previously required a CSS preprocessor), useful for a dark theme for example. CSS custom properties
-make it easier than ever to override SuperSport web components to match a brand or theme.
+make it easier than ever to override SuperSport Web Components to match a brand or theme.
 
 ## Design Tokens
 
-Design tokens are the building blocks of all UI elements. In SuperSport web components, tokens
+Design tokens are the building blocks of all UI elements. In SuperSport Web Components, tokens
 are [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*)
 that can be used to style components.
 
@@ -24,7 +24,7 @@ tokens, however, as design tokens are intended to be generic and highly reusable
 the section entitled Component variables.
 
 Design tokens are accessed through CSS custom properties that are defined in the :root block of core.css. This stylesheet is imported 
-when you install SuperSport web components, so design tokens are available on your page at that point. Because design tokens are global, 
+when you install SuperSport Web Components, so design tokens are available on your page at that point. Because design tokens are global, 
 they're always prefixed with --gr to avoid collisions with other libraries.
 
 To customize a design token, simply override it in your stylesheet using a :root block.
@@ -47,7 +47,7 @@ To customize a design token, simply override it in your stylesheet using a :root
 
 Many design tokens are described further along in this documentation. For a complete list, refer to core.css in the project's source code.
 
-Tip: you can use these tokens in your own custom components, to align them with the SuperSport web components. For example:
+Tip: you can use these tokens in your own custom components, to align them with the SuperSport Web Components. For example:
 
 ```css copy
 .sidebar {
