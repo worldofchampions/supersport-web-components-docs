@@ -6,18 +6,44 @@
   "index": "Introduction",
   "installation": "Installation",
   "theming": "Theming",
-  "changelog": "Changelog",
-  "-- Guidelines": {
+  "-- Resources": {
     "type": "separator",
-    "title": "Guidelines"
+    "title": "Resources"
   },
   "browser_support": "Browser Support",
+  "changelog": "Changelog",
   "release_management": "Release Management",
   "-- Components": {
     "type": "separator",
     "title": "Components"
   },
-  "components": "All Components",
+  "components": {
+    "display": "hidden"
+  },
+  "components-articlecard": {
+    "title": "Article Card",
+    "href": "/components/article_card"
+  },
+  "components-articlelist": {
+    "title": "Article List",
+    "href": "/components/article_list"
+  },
+  "components-cricketscrorecard": {
+    "title": "Cricket Scorecard",
+    "href": "/components/cricket_scorecard"
+  },
+  "components-promobanner": {
+    "title": "Promo Banner",
+    "href": "/components/promo_banner"
+  },
+  "components-videocard": {
+    "title": "Video Card",
+    "href": "/components/video_card"
+  },
+  "components-videolist": {
+    "title": "Video List",
+    "href": "/components/video_list"
+  },
   "-- More": {
     "type": "separator",
     "title": "More"
