@@ -1,4 +1,13 @@
 {
+  "*": {
+    "theme": {
+      "breadcrumb": true,
+      "footer": false,
+      "sidebar": true,
+      "toc": true,
+      "pagination": true
+    }
+  },
   "-- Get Started": {
     "type": "separator",
     "title": "Getting Started"
