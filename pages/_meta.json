@@ -8,11 +8,11 @@
       "pagination": true
     }
   },
+  "index": "Introduction",
   "-- Get Started": {
     "type": "separator",
     "title": "Getting Started"
   },
-  "index": "Introduction",
   "installation": "Installation",
   "theming": "Theming",
   "-- Resources": {
@@ -52,19 +52,5 @@
   "components-videolist": {
     "title": "Video List",
     "href": "/components/video_list"
-  },
-  "-- More": {
-    "type": "separator",
-    "title": "More"
-  },
-  "supersport-link": {
-    "title": "supersport.com ↗",
-    "href": "https://supersport.com",
-    "newWindow": true
-  },
-  "submit-a-ticket-link": {
-    "title": "Support ↗",
-    "href": "https://worldofchampions.freshdesk.com/support/tickets/new",
-    "newWindow": true
   }
 }
