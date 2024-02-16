@@ -7,22 +7,22 @@ const frameworkLinks = [
 	{
 		title: "Web Components",
 		icon: Icons.web_components,
-		href: "/get_started/installation/web_components",
+		href: "/installation/web_components",
 	},
 	{
 		title: "React",
 		icon: Icons.react,
-		href: "/get_started/installation/react",
+		href: "/installation/react",
 	},
 	{
 		title: "Vue",
 		icon: Icons.vue,
-		href: "/get_started/installation/vue",
+		href: "/installation/vue",
 	},
 	{
 		title: "Angular",
 		icon: Icons.angular,
-		href: "/get_started/installation/angular",
+		href: "/installation/angular",
 	},
 ];
 
