@@ -115,3 +115,7 @@ h2 {
 details {
 	@apply !bg-card;
 }
+
+footer {
+	@apply !hidden;
+}
