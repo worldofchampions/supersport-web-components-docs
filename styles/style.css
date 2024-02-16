@@ -67,7 +67,7 @@ h1 {
 }
 
 :root {
-	--shiki-token-keyword: #e30202;
+	/* --shiki-token-keyword: #e30202; */
 }
 
 .nextra-nav-container {

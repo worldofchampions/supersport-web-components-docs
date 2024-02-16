@@ -1,1 +1,48 @@
 # React
+
+SuperSport Web Componenets are offerred via a React version for webcomponents. You can view both html and react samples in the documentation.
+
+## Installation
+
+To add crayons to your React app, install the package from our package manager.
+
+```bash
+npm install @supersport/ss-web-components@v0.1
+```
+
+## Usage
+
+### Importing components
+
+Every SuperSport Web Componenet is available to import as a React component. For using button, please note we will
+be using `<SsButton>` instead of `<ss-button>`
+
+```jsx copy
+import { SsButton } from "@supersport/webcomponents/react";
+
+const App = () => <SsButton color="primary">Click me</SsButton>;
+
+export default App;
+```
+
+### Event Handling
+
+SuperSport Web Components emit custom events. For example, the button component emits the ssClick event when it is getting
+clicked. In React, you can listen for the event using onSsClick.
+
+You can find the list of properties, events and methods for the webcomponent under each component's documentation.
+
+```jsx copy
+import { SsButton } from "@supersport/webcomponents/react";
+
+const App = () => (
+	<SsButton
+		color="primary"
+		onSsClick={() => console.log("ssClick event emitted from button")}
+	>
+		Click me
+	</SsButton>
+);
+
+export default App;
+```

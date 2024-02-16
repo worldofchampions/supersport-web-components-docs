@@ -1,2 +1,26 @@
 # Web Components
 
+You can install a specific version of SuperSport Web Components using ss-web-components@v[version]
+
+## Usage via CDN
+
+From your app’s root html file add the following scripts:
+
+```html
+<script
+	type="module"
+	src="https://components.supersport.com/v@0.1/supersport-web-components.esm.js"
+></script>
+<script
+	nomodule
+	src="https://components.supersport.com/v@0.1/supersport-web-components.js"
+></script>
+```
+
+You can now use the SuperSport Web Components just like how you would use any other html element.
+
+```html
+<ss-promo-banner
+	banner-id="fae0a53e-99aa-4bf4-9950-142fa9110607"
+></ss-promo-banner>
+```

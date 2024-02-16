@@ -16,15 +16,15 @@ Design tokens are the building blocks of all UI elements. In SuperSport Web Comp
 are [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*)
 that can be used to style components.
 
-SuperSport web makes use of several design tokens to provide a consistent appearance across components. You can customize them and 
+SuperSport web makes use of several design tokens to provide a consistent appearance across components. You can customize them and
 use them in your own application with pure CSS — no preprocessor required.
 
-Design tokens offer a high-level way to customize the Design System with minimal effort. There are no component-specific design 
-tokens, however, as design tokens are intended to be generic and highly reusable. To customize an individual component, refer to 
+Design tokens offer a high-level way to customize the Design System with minimal effort. There are no component-specific design
+tokens, however, as design tokens are intended to be generic and highly reusable. To customize an individual component, refer to
 the section entitled Component variables.
 
-Design tokens are accessed through CSS custom properties that are defined in the :root block of core.css. This stylesheet is imported 
-when you install SuperSport Web Components, so design tokens are available on your page at that point. Because design tokens are global, 
+Design tokens are accessed through CSS custom properties that are defined in the :root block of core.css. This stylesheet is imported
+when you install SuperSport Web Components, so design tokens are available on your page at that point. Because design tokens are global,
 they're always prefixed with --gr to avoid collisions with other libraries.
 
 To customize a design token, simply override it in your stylesheet using a :root block.
@@ -59,8 +59,8 @@ Tip: you can use these tokens in your own custom components, to align them with 
 
 ## Component variables
 
-The SuperSport Design System provides variables that exist at the component level, such as --background and --color. For 
-a list of the custom properties a component accepts, view the "CSS custom properties" section of its API reference. For 
+The SuperSport Design System provides variables that exist at the component level, such as --background and --color. For
+a list of the custom properties a component accepts, view the "CSS custom properties" section of its API reference. For
 example, see the Button CSS custom properties.
 
 ```css copy
@@ -76,4 +76,69 @@ ss-button {
 ss-button.default {
 	--background: #00ff00;
 }
+```
+
+## Component Styling
+
+The SuperSport Web Component library follows the Shadow DOM specification in order to encapsulate styles and markup. To override default styling of components [shadow parts](#shadow-parts) are used and allow developers to style inside a shadow tree, from outside of that shadow tree.
+
+### Styling all instances
+
+Given the below example, two instances of the promo banner component are rendered.
+
+```html copy
+<ss-promo-banner
+	banner-id="fae0a53e-99aa-4bf4-9950-142fa9110607"
+></ss-promo-banner>
+<ss-promo-banner
+	banner-id="7eccb58e-da70-4957-8f85-afeedfe43816"
+></ss-promo-banner>
+```
+
+To style all instances of the component, the following CSS is used to target the component by name, including its associated parts.
+
+```css copy
+<style>
+  ss-promo-banner::part(banner) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ss-promo-banner::part(image) {
+    background-color: red;
+    padding: 50px;
+  }
+</style>
+```
+
+### Styling a single instance
+
+Given the below example, two instances of the promo banner component are rendered. One contains an id attribute which is used to target the component.
+
+```html copy
+<ss-promo-banner
+	banner-id="fae0a53e-99aa-4bf4-9950-142fa9110607"
+></ss-promo-banner>
+<ss-promo-banner
+	id="styled-banner"
+	banner-id="7eccb58e-da70-4957-8f85-afeedfe43816"
+></ss-promo-banner>
+```
+
+To style a single instances of a component, the following CSS is used to target the component by CSS id, including its associated parts.
+
+```css copy
+<style>
+  #styled-banner::part(banner) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #styled-banner::part(image) {
+    background-color: red;
+    padding: 50px;
+  }
+</style>
 ```
